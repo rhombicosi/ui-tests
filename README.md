@@ -1,4 +1,4 @@
-# advantageplus test framework
+# test framework
 Protractor cucumber typescript framework
 
 ## Setup framework

@@ -1,0 +1,590 @@
+[
+  {
+    "description": "  As a user\n  I can open oco order ticket panel\n  So all functionality should work fine for the panel",
+    "keyword": "Feature",
+    "name": "OCO Order Ticket panel",
+    "line": 2,
+    "id": "oco-order-ticket-panel",
+    "tags": [
+      {
+        "name": "@ocoticket",
+        "line": 1
+      }
+    ],
+    "uri": "ui-tests\\test-layer\\cucumber-tests\\features\\components\\deal-ticket\\oco-ticket.feature",
+    "elements": [
+      {
+        "id": "oco-order-ticket-panel;amend-oco-order-w/-stop/limit",
+        "keyword": "Scenario",
+        "line": 268,
+        "name": "Amend OCO order w/ stop/limit",
+        "tags": [
+          {
+            "name": "@ocoticket",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 231
+          },
+          {
+            "name": "@oco",
+            "line": 231
+          },
+          {
+            "name": "@amend",
+            "line": 231
+          },
+          {
+            "name": "@stop/limit",
+            "line": 231
+          },
+          {
+            "name": "@USD/JPY",
+            "line": 231
+          },
+          {
+            "name": "@GBP/USD-DFT",
+            "line": 231
+          },
+          {
+            "name": "@ballmer",
+            "line": 231
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\hooks.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3450
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\hooks.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 453
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\hooks.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\tagged-hooks.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am logged in to the application with default state",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\browser-steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 233,
+            "name": "I add new tab",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\boards\\workspace-board-steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 856
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 234,
+            "name": "I add new 'Watchlist' panel in '2'nd tab",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\boards\\workspace-board-steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1832
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "height",
+                      "600"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "width",
+                      "1000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 235,
+            "name": "I resize panel with:",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\panel-steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 279
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 238,
+            "name": "I expand 'Popular Markets' watchlist",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\watchlist-panel-steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 424
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 239,
+            "name": "I click on 'sell' in the 'USD/JPY' market",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\elements\\market-steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4306
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 240,
+            "name": "the 'Deal ticket' panel should be visible",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\panel-steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 279
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 241,
+            "name": "I switch to 'order' tab",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1659
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 242,
+            "name": "I fill main 'order price' with value '100'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 619
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 243,
+            "name": "I fill main 'quantity' with value '1000'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 615
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 244,
+            "name": "I check 'stop' checkbox",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1319
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 245,
+            "name": "I fill the main '1'st normal stop linked order 'price' with value '120'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 728
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 246,
+            "name": "I check 'limit' checkbox",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1285
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 247,
+            "name": "I fill the main '2'nd limit linked order 'price' with value '90'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 725
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 248,
+            "name": "I click on 'oco' link",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1202
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 249,
+            "name": "I click on 'oco sell label' element",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1731
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 250,
+            "name": "I fill oco 'order price' with value '120'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 774
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 251,
+            "name": "I fill oco 'quantity' with value '1500'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 591
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 252,
+            "name": "I check oco 'stop' checkbox",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1361
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 253,
+            "name": "I fill the oco '1'st normal stop linked order 'price' with value '150'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 254,
+            "name": "I check oco 'limit' checkbox",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1390
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 255,
+            "name": "I fill the oco '2'nd limit linked order 'price' with value '100'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 256,
+            "name": "I click on 'submit' button",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 257,
+            "name": "I click on 'ok' button",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\deal-ticket-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 258,
+            "name": "I add new 'Positions And Orders' panel in '2'nd tab",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\boards\\workspace-board-steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2425
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 259,
+            "name": "I select 'Orders' list",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\panels\\positions-and-orders-panel-steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 896
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 260,
+            "name": "the 'previously added' market should be present on the list",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\elements\\market-steps.ts:130"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 384
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 261,
+            "name": "the 'previously added' market 'stop price' cell should contain 'multiple' word",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\elements\\market-steps.ts:209"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 276
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 262,
+            "name": "the 'previously added' market 'limit price' cell should contain 'multiple' word",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\elements\\market-steps.ts:209"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 246
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 263,
+            "name": "I expand '1'st multi-market",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\elements\\multi-market-steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 902
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 264,
+            "name": "the '1'st market's sub-markets count should be '2'",
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\elements\\multi-market-steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\tagged-hooks.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 389
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\hooks.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\hooks.ts:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 416
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\hooks.ts:81"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "ui-tests\\test-layer\\cucumber-tests\\step_definitions\\hooks.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "64.0.3282.140"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
